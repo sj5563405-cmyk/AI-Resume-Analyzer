@@ -84,9 +84,9 @@ def extract_pdf(file):
 
 def extract_image(file):
 
-    st.warning("Image OCR is disabled in cloud deployment. Please upload PDF.")
+    st.warning("Image OCR is disabled in cloud deployment. Please upload PDF instead.")
 
-    return """"
+    return ""
 
 
 # ---------------- INPUT ----------------
