@@ -53,9 +53,8 @@ st.write("Upload resume to analyze skills, ATS compatibility, and role predictio
 
 # ---------------- LOAD MODEL ----------------
 
-model = pickle.load(open("models/model.pkl","rb"))
-tfidf = pickle.load(open("models/tfidf.pkl","rb"))
-
+mmodel = pickle.load(open("models/models/model.pkl","rb"))
+tfidf = pickle.load(open("models/models/tfidf.pkl","rb"))
 # ---------------- SIDEBAR ----------------
 
 st.sidebar.header("Resume Input")
