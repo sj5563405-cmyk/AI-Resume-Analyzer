@@ -5,3 +5,4 @@ scikit-learn
 matplotlib
 PyPDF2
 Pillow
+wordcloud
