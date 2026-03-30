@@ -82,13 +82,11 @@ def extract_pdf(file):
     return text
 
 
-def extract_image(file):
+ddef extract_image(file):
 
-    img = Image.open(file)
+    st.warning("Image OCR is disabled in cloud deployment. Please upload PDF.")
 
-    text = pytesseract.image_to_string(img)
-
-    return text
+    return ""
 
 
 # ---------------- INPUT ----------------
@@ -314,7 +312,4 @@ if resume_text:
 
 
 
-import pytesseract
-
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
